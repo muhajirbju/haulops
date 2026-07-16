@@ -42,18 +42,24 @@ npm run dev
 ```
 Tunggu sampai muncul `Local: http://localhost:5173/`.
 
-### 4) Tunnel (URL publik)
+### 4) Tunnel — URL custom stabil (named tunnel)
+Named tunnel `haulops` sudah dibuat & DNS `haulops.bjudev.my.id` sudah diarahkan.
+Cukup jalankan:
 ```powershell
-C:\Users\LENOVO\cloudflared.exe tunnel --url http://localhost:5173 --http-host-header localhost:5173
+C:\Users\LENOVO\cloudflared.exe tunnel run --url http://localhost:5173 --http-host-header localhost:5173 haulops
 ```
-Di output akan muncul baris seperti:
-```
-https://xxxx-xxxx-xxxx.trycloudflare.com
-```
-**Itulah URL yang dibagikan ke management.**
+URL demo: **https://haulops.bjudev.my.id** (tetap, tidak berubah tiap restart).
 
 > ⚠️ Flag `--http-host-header localhost:5173` **wajib** — tanpa itu Vite menolak
 > request dari domain tunnel ("Blocked request. This host is not allowed").
+
+<details><summary>Alternatif: quick tunnel (URL acak, tanpa domain)</summary>
+
+```powershell
+C:\Users\LENOVO\cloudflared.exe tunnel --url http://localhost:5173 --http-host-header localhost:5173
+```
+Outputnya berupa `https://xxxx.trycloudflare.com` (berubah tiap restart).
+</details>
 
 ---
 
