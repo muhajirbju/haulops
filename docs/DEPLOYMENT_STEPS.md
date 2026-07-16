@@ -43,8 +43,15 @@ Nilai yang akan Anda kumpulkan sambil jalan (isi saat dapat):
 4. **Create new project** → tunggu ~2 menit sampai status hijau (provisioning).
 
 ### 1.2 Ambil connection string (bagian paling penting)
-1. Di halaman project, klik tombol **Connect** (atas), atau **Project Settings (ikon gerigi) → Database**.
-2. Cari bagian **Connection string** / **Connection pooling**. Ada beberapa mode — kita pakai **dua**:
+> UI baru Supabase: menu "Settings → Database" **sudah tidak ada**. Pakai tombol
+> hijau **"Connect"** di bar atas dashboard.
+
+1. Klik tombol hijau **"Connect"** (bar atas, dekat nama branch/project).
+2. **Cara termudah** — tab **"ORMs" → Prisma**: langsung menampilkan `DATABASE_URL`
+   (transaction pooler 6543) **dan** `DIRECT_URL` (session pooler 5432) siap salin.
+   Lewati langkah manual di bawah bila ini muncul.
+3. **Cara manual** (tab **"Connection string"**, ada sub-tab Direct / Transaction
+   pooler / Session pooler) — ambil **dua**:
 
    **a) `DATABASE_URL` — mode "Transaction pooler" (port 6543):**
    ```

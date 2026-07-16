@@ -69,8 +69,10 @@
    - **Database Password**: buat password yang kuat, **simpan baik-baik**
    - **Region**: `Southeast Asia (Singapore)` ← pilih yang terdekat
 3. Tunggu project selesai dibuat (~2 menit)
-4. Buka **Project Settings → Database → Connection String**
-5. Catat **dua URL** berikut:
+4. Klik tombol hijau **"Connect"** di bar atas dashboard (menu lama "Settings →
+   Database" sudah tidak ada). Pilih tab **ORMs → Prisma** untuk melihat kedua URL
+   langsung, atau tab **Connection string** (sub-tab Transaction/Session pooler).
+5. Catat **dua URL** berikut (ganti `[password]` dengan Database Password):
 
    **`DATABASE_URL`** — Transaction Pooler (untuk runtime/production):
    ```
