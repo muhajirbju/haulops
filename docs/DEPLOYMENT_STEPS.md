@@ -13,7 +13,7 @@ terakhir update CORS. Siapkan ~30–45 menit.
 
 ## Persiapan (5 menit)
 
-1. Pastikan punya akun **GitHub** dengan akses ke repo `ICC-Warrom-BJU/haulops`.
+1. Pastikan punya akun **GitHub** dengan akses ke repo `muhajirbju/haulops`.
 2. Siapkan **satu password kuat** untuk database (akan dipakai di Supabase) — catat di tempat aman.
 3. Siapkan **satu password kuat** untuk admin aplikasi (akan jadi `ADMIN_PASSWORD` di Render).
 4. Semua kode sudah ada di branch `main` — tidak perlu push apa pun lagi.
@@ -80,8 +80,8 @@ Nilai yang akan Anda kumpulkan sambil jalan (isi saat dapat):
 ### 2.1 Buat service dari Blueprint
 1. Buka **https://render.com** → **Get Started** / login **with GitHub**.
 2. Klik **New +** (kanan atas) → **Blueprint**.
-3. **Connect a repository** → pilih `ICC-Warrom-BJU/haulops`.
-   - Jika repo tak muncul: **Configure account** → beri Render akses ke repo/organisasi `ICC-Warrom-BJU`.
+3. **Connect a repository** → pilih `muhajirbju/haulops`.
+   - Jika repo tak muncul: **Configure account** → beri Render akses ke repo/organisasi `muhajirbju`.
 4. Render otomatis membaca **`render.yaml`** di root → menampilkan service **`haulops-server`**.
 5. Klik **Apply** / **Create Services**.
 
@@ -121,7 +121,7 @@ Yang **sudah otomatis** (tak perlu diisi): `JWT_SECRET` (auto-generate), `JWT_EX
 
 ### 3.1 Buat project
 1. Buka **https://railway.app** → login **with GitHub**.
-2. **New Project** → **Deploy from GitHub repo** → pilih `ICC-Warrom-BJU/haulops`.
+2. **New Project** → **Deploy from GitHub repo** → pilih `muhajirbju/haulops`.
 3. Railway membuat service dari repo. Buka service tsb → **Settings**.
 
 ### 3.2 Set Root Directory & Builder (WAJIB untuk monorepo)
