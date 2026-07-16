@@ -76,12 +76,12 @@
 
    **`DATABASE_URL`** — Transaction Pooler (untuk runtime/production):
    ```
-   postgresql://postgres.[ref]:[password]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true&connection_limit=1
+   DATABASE_URL="postgresql://postgres.[ref]:[password]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
    ```
 
    **`DIRECT_URL`** — Session Pooler atau Direct (untuk Prisma migrate):
    ```
-   postgresql://postgres.[ref]:[password]@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+   DIRECT_URL="postgresql://postgres.[ref]:[password]@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
    ```
 
 > [!NOTE]
